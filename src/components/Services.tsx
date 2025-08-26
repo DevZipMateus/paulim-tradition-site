@@ -24,6 +24,33 @@ const Services = () => {
     }
   ];
 
+  const productImages = [
+    {
+      src: '/lovable-uploads/304101b8-5bd2-411f-9f89-aa4fb551f8cb.png',
+      alt: 'Produtos de limpeza - detergentes e panos de microfibra'
+    },
+    {
+      src: '/lovable-uploads/bd513e78-36ad-4840-9d34-df3f5093abdc.png',
+      alt: 'Kit de limpeza com spray e materiais de limpeza'
+    },
+    {
+      src: '/lovable-uploads/2c64870a-0f59-4a6f-8dce-48f3db917e1e.png',
+      alt: 'Papel toalha em rolo para uso profissional'
+    },
+    {
+      src: '/lovable-uploads/fd88d31e-875b-4d5a-a457-6025344ccae1.png',
+      alt: 'Papel higiênico em rolos para uso comercial'
+    },
+    {
+      src: '/lovable-uploads/80f4057e-a611-4017-81e4-2f8666ee432f.png',
+      alt: 'Dispenser de papel toalha para banheiros'
+    },
+    {
+      src: '/lovable-uploads/9bf5d7c4-0ae5-435a-9b8b-3f6082dc1537.png',
+      alt: 'Dispenser automático de papel toalha'
+    }
+  ];
+
   return (
     <section id="servicos" className="section-padding bg-white">
       <div className="container-custom">
@@ -68,6 +95,42 @@ const Services = () => {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Products Gallery */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Nossos Produtos
+            </h3>
+            <p className="text-lg text-paulim-gray max-w-2xl mx-auto">
+              Conheça alguns dos produtos de qualidade que oferecemos para 
+              atender suas necessidades de limpeza e higiene.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {productImages.map((image, index) => (
+              <div 
+                key={index} 
+                className="group relative overflow-hidden rounded-2xl bg-accent/30 aspect-square animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2">
+                    <p className="text-primary font-medium text-sm text-center">
+                      {image.alt}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA Section */}
