@@ -13,7 +13,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/6bea9858-a4f2-4700-ab57-63bf1080e00e.png" 
               alt="Paulim" 
-              className="h-12 w-auto mb-6 brightness-0 invert"
+              className="h-12 w-auto mb-6"
             />
             <p className="text-white/90 mb-6 max-w-md">
               Há 25 anos construindo nossa história com dedicação, 
