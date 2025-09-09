@@ -59,8 +59,8 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/6bea9858-a4f2-4700-ab57-63bf1080e00e.png" 
-                alt="Paulim - Tradição em Limpeza" 
+                src="/lovable-uploads/66aba470-c5c5-4faa-ae20-b26f3c50bcf2.png" 
+                alt="Paulim - Produtos de Limpeza" 
                 className="h-10 w-auto"
               />
             </div>
