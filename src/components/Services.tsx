@@ -15,13 +15,13 @@ const Services = () => {
       icon: Package,
       title: 'Descartáveis em Geral',
       description: 'Completa variedade de produtos descartáveis para empresas, eventos e uso doméstico.',
-      features: ['Copos e pratos', 'Guardanapos e papéis', 'Embalagens', 'Produtos para eventos']
+      features: ['Papel Toalha Bobina', 'Papel Toalha interfolhas', 'Papel Toalha Folha dupla', 'Papel higiênico cai cai', 'Papel higiênico Rolão', 'Copos descartáveis']
     },
     {
       icon: Hammer,
       title: 'Limpeza de Pedras',
-      description: 'Serviço especializado em limpeza e tratamento de pedras naturais e revestimentos.',
-      features: ['Mármores e granitos', 'Pedras naturais', 'Tratamentos especiais', 'Manutenção preventiva']
+      description: 'Serviço especializado em limpeza e manutenção',
+      features: ['Pedras naturais', 'Mosaico', 'Fuget', 'Manutenção preventiva']
     }
   ];
 
