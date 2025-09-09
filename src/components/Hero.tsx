@@ -15,7 +15,11 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Paulim
+              <img 
+                src="/lovable-uploads/35d0ed17-1ea2-41b4-b920-41fcb333a418.png" 
+                alt="Paulim" 
+                className="h-16 md:h-20 w-auto mb-4"
+              />
               <span className="block text-accent text-2xl md:text-3xl font-normal mt-2">
                 Tradição em limpeza
               </span>
