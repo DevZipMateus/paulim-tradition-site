@@ -34,6 +34,10 @@ const Header = () => {
                 <span>(11) 99754-3171</span>
               </div>
               <div className="flex items-center gap-1">
+                <Phone className="h-3 w-3" />
+                <span>(11) 99744-0363</span>
+              </div>
+              <div className="flex items-center gap-1">
                 <Mail className="h-3 w-3" />
                 <span>paulim.docs@gmail.com</span>
               </div>
