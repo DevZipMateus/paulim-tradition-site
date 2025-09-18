@@ -1,7 +1,13 @@
 import React from 'react';
-import { Sparkles, Package, Hammer, MessageCircle } from 'lucide-react';
+import { Sparkles, Package, Hammer, MessageCircle, FileText } from 'lucide-react';
 
 const Services = () => {
+  const handleQuoteRequest = (serviceName: string) => {
+    const message = `Olá! Gostaria de solicitar um orçamento para: ${serviceName}`;
+    const whatsappUrl = `https://wa.me/5511997543171?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const services = [
     {
       icon: Sparkles,
@@ -57,7 +63,7 @@ const Services = () => {
                 {service.description}
               </p>
               
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center gap-2 text-sm text-paulim-gray">
                     <div className="w-1.5 h-1.5 bg-secondary rounded-full"></div>
@@ -65,6 +71,14 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
+              
+              <button
+                onClick={() => handleQuoteRequest(service.title)}
+                className="w-full bg-secondary text-white py-3 px-4 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 hover:bg-primary transition-colors duration-300 mt-auto"
+              >
+                <FileText className="h-4 w-4" />
+                Solicitar Orçamento
+              </button>
             </div>
           ))}
         </div>
