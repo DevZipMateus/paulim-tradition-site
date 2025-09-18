@@ -2,7 +2,6 @@ import React from 'react';
 import { Sparkles, Package, Hammer, MessageCircle } from 'lucide-react';
 
 const Services = () => {
-
   const services = [
     {
       icon: Sparkles,
@@ -23,7 +22,6 @@ const Services = () => {
       features: ['Pedras naturais', 'Mosaico', 'Fuget', 'Manutenção preventiva']
     }
   ];
-
 
   return (
     <section id="servicos" className="section-padding bg-white">
@@ -70,7 +68,6 @@ const Services = () => {
             </div>
           ))}
         </div>
-
 
         {/* CTA Section */}
         <div className="bg-accent/50 rounded-2xl p-8 md:p-12 text-center animate-fade-in">
